@@ -1,0 +1,94 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BBLab — Visualizações</title>
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#100e3a;color:#fff;font-family:'Satoshi',Arial,sans-serif}
+.hdr{background:linear-gradient(135deg,#0d0b2e,#1B1464 60%,#1e3a8a);
+  border-bottom:3px solid #6EDCBE;padding:20px 36px;
+  display:flex;align-items:center;justify-content:space-between}
+.dot{width:34px;height:34px;background:linear-gradient(135deg,#6EDCBE,#1B1464);
+  border-radius:50% 50% 50% 10%;transform:rotate(-30deg);margin-right:14px}
+.bn{font-size:21px;font-weight:700}.bs{font-size:10px;color:#6EDCBE;letter-spacing:.08em}
+.ht{font-size:12px;color:rgba(255,255,255,.6);text-align:right}
+.ht span{color:#6EDCBE;font-weight:700}
+.main{max-width:820px;margin:0 auto;padding:36px 20px 60px}
+.intro{background:rgba(27,20,100,.4);border:1px solid #2a2860;
+  border-top:3px solid #6EDCBE;border-radius:10px;padding:22px 26px;margin-bottom:28px}
+.intro h2{font-size:14px;color:#6EDCBE;margin-bottom:7px;font-weight:700}
+.intro p{font-size:12.5px;color:rgba(255,255,255,.72);line-height:1.6}
+.sl{font-size:10px;font-weight:700;letter-spacing:.12em;color:#6EDCBE;
+  text-transform:uppercase;border-bottom:1px solid rgba(110,220,190,.2);
+  padding-bottom:5px;margin-bottom:14px}
+.grid{display:grid;gap:10px}
+.card{display:flex;align-items:center;gap:18px;
+  background:rgba(19,16,74,.7);border:1px solid #2a2860;
+  border-radius:10px;padding:16px 20px;
+  text-decoration:none;color:#fff;transition:border-color .15s,transform .15s}
+.card:hover{border-color:#6EDCBE;transform:translateX(4px)}
+.ic{width:42px;height:42px;flex-shrink:0;
+  background:linear-gradient(135deg,#1B1464,#1e7ea6);
+  border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:19px}
+.cb{flex:1}.ct{font-size:13.5px;font-weight:700;margin-bottom:2px}
+.cd{font-size:11px;color:rgba(255,255,255,.52);line-height:1.4}
+.ca{color:#6EDCBE;font-size:17px;flex-shrink:0}
+.ft{text-align:center;padding:20px;font-size:11px;
+  color:rgba(255,255,255,.22);border-top:1px solid #2a2860;margin-top:36px}
+.ft span{color:#6EDCBE}
+</style></head><body>
+<header class="hdr">
+  <div style="display:flex;align-items:center">
+    <div class="dot"></div>
+    <div><div class="bn">BBLab</div>
+    <div class="bs">Laboratory of Biomaterials and Biointerfaces</div></div>
+  </div>
+  <div class="ht">Análise Bibliométrica<br><span>Biomateriais no PubMed</span></div>
+</header>
+<main class="main">
+  <div class="intro">
+    <h2>Visualizações Interativas</h2>
+    <p>Clique em qualquer item para abrir a visualização.
+    Todos os gráficos são interativos — use o slider de ano e o botão Play para explorar.</p>
+  </div>
+  <div class="sl">Selecione uma visualização</div>
+  <div class="grid">
+    <a class="card" href="dashboard_bblab.html">
+      <div class="ic">📊</div>
+      <div class="cb"><div class="ct">Dashboard — Análise e Aprovação</div><div class="cd">Painel completo com KPIs, todos os gráficos e formulário de aprovação.</div></div>
+      <div class="ca">→</div>
+    </a>
+    <a class="card" href="mapa_calor_biomateriais.html">
+      <div class="ic">🗺️</div>
+      <div class="cb"><div class="ct">Mapa de Calor Animado</div><div class="cd">Mapa-múndi com slider de ano. Pressione Play para animar.</div></div>
+      <div class="ca">→</div>
+    </a>
+    <a class="card" href="linha_temporal.html">
+      <div class="ic">📈</div>
+      <div class="cb"><div class="ct">Linha Temporal</div><div class="cd">Evolução anual dos top 15 países.</div></div>
+      <div class="ca">→</div>
+    </a>
+    <a class="card" href="bump_chart.html">
+      <div class="ic">🏆</div>
+      <div class="cb"><div class="ct">Bump Chart — Ranking Relativo</div><div class="cd">Posição de cada país no ranking global, ano a ano.</div></div>
+      <div class="ca">→</div>
+    </a>
+    <a class="card" href="treemap_animado.html">
+      <div class="ic">🌲</div>
+      <div class="cb"><div class="ct">Treemap Animado</div><div class="cd">Proporção de cada país no total global com animação.</div></div>
+      <div class="ca">→</div>
+    </a>
+    <a class="card" href="area_empilhada.html">
+      <div class="ic">🌊</div>
+      <div class="cb"><div class="ct">Área Empilhada</div><div class="cd">Contribuição acumulada de cada país ao longo do tempo.</div></div>
+      <div class="ca">→</div>
+    </a>
+    <a class="card" href="heatmap_matriz.html">
+      <div class="ic">🔥</div>
+      <div class="cb"><div class="ct">Heatmap Matriz País × Ano</div><div class="cd">Tabela de calor para identificar surtos e tendências.</div></div>
+      <div class="ca">→</div>
+    </a></div>
+</main>
+<footer class="ft">
+  <span>BBLab</span> — Laboratory of Biomaterials and Biointerfaces
+</footer></body></html>
